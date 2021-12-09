@@ -1,9 +1,10 @@
 const config = {
     entry: {
-      index: "./public/index.js",
-      html: "./public/index.html",
-      css: "./public/styles.css",
-      routes: "./routes/api.js",
+      index: "index.js",
+      routes: "../routes/api.js",
+      register: "service-worker-register.js",
+      worker: "service-worker.js",
+      indexdb: "indexdb.js"
     },
     output: {
       path: __dirname + "/dist",
