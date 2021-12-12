@@ -1,5 +1,3 @@
-const { request } = require("express");
-
 //REQUEST DB INSTANCE
 let db;
 let budget_db_version;
@@ -61,7 +59,8 @@ const checkDatabase = () => {
     };
 };
 
-request.onsuccess = function (e) {
+
+req.onsuccess = function (e) {
     db = e.target.result;
 
     if (navigator.onLine) {
